@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Poppins:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --lg-font: 'Kaisei Decol', serif;
+    --sm-font: 'Poppins', sans-serif;
+}
+body::before {
+    display: block;
+    content: '';
+    height: 50px;
+}
+.container button.navbar-toggler {
+    background-color: white;
+}
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+hr.new1 {
+    color: grey;
+}
+
+a.curr-link {
+    text-decoration: none;
+    
+}
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.color-swicher, .theme-buttons-container {
+    display: flex;
+    gap: 6px;
+}
+#primary {
+    background-color: #1266F1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#secondary {
+    background-color: #9FA6B2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#warning {
+    background-color: #FFA900;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#success {
+    background-color: #00B74A;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
